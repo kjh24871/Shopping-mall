@@ -2,6 +2,7 @@ package Shoppingmall.demo.Service;
 
 import Shoppingmall.demo.Member.Member;
 import Shoppingmall.demo.MemberRepository.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
@@ -11,6 +12,8 @@ import java.util.Optional;
 public class MemberService {
 
     private final MemberRepository memberRepository;
+
+
 
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;

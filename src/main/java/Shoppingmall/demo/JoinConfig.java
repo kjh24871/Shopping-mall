@@ -25,10 +25,7 @@ public class JoinConfig {
     }
 
     @Bean
-    public MemberService memberService()
-    {
-        return new MemberService(memberRepository());
-    }
+    public MemberService memberService() { return new MemberService(memberRepository()); }
 
     @Bean
     public MemberRepository memberRepository(){
